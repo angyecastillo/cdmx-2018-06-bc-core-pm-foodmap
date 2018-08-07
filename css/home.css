@@ -1,0 +1,161 @@
+
+.header {
+  --foodmap-red: #e55934;
+  --foodmap-red-hover: #ad3210;
+  --foodmap-orange: #fbb041;
+
+}
+
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+.bg-color {
+  background: linear-gradient(to bottom, #fff,rgba(94, 3, 7, 0.9));
+  min-height: 100vh;
+}
+
+#map {
+  margin-top: 25px;
+  height: 40vh;
+}
+
+/* Overwrite styles */
+.form-group input, .form-group select {
+  border: none;
+  border-radius: 25px;
+  box-shadow: 2px 4px 6px 2px  rgba(164, 232, 236, 0.15);
+}
+
+.btn-default {
+  background-color: var(--foodmap-red);
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+}
+
+.btn-default:hover {
+  background-color: var(--foodmap-red-hover);
+  color: #fff;
+}
+
+/* Splash screen */
+.splash {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('imagen/splash-bg.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.foodmap-brand {
+  font-weight: 700;
+  color: var(--foodmap-red);
+}
+
+.foodmap-main {
+  font-weight: 700;
+  color: var(--foodmap-red);
+}
+
+.foodmap-title {
+  font-weight: 900;
+  color: var(--foodmap-orange);
+}
+
+.splash-logo {
+  width: 50%;
+}
+
+/* Header styles */
+
+header P {
+  background-color: black
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid #d1d1d1;
+  
+
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+/* Map styles */
+iframe {
+  width: 100%;
+  margin: 25px auto;
+  border: 0;
+}
+
+#map {
+  height: 40vh;
+}
+
+/* Search results styles */
+.collection {
+  display: block;
+  height: 30vh;
+  padding: 10px;
+}
+
+.collection a {
+  box-shadow: 2px 4px 6px 2px  rgba(87, 158, 161, 0.3);
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: .25s;
+  position: relative;
+}
+
+.caption {
+  position: absolute;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background-color: rgba(255, 175, 174, 0.9);
+  opacity: 0;
+  transition: .4s;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  color: #fff;
+  font-size: 1.25em;
+}
+
+.caption img {
+  width: 30%;
+  max-width: 75px;
+}
+
+/* Modal styles */
+.modal-content {
+  border-radius: 20px;
+}
+
+.modal-header, .modal-footer {
+  border: none;
+}
+
+.modal-body iframe {
+  height: 30vh;
+  margin-top: 0;
+}
+
+@media (min-width: 768px) {
+  .navbar-form {
+    width: 50%;
+  }
+
+  .navbar-form .form-group, .navbar-form .form-control {
+    width: 100%;
+  }
+}
+]
